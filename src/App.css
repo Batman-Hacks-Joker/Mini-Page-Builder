@@ -1,0 +1,7 @@
+.App {
+  text-align: center;
+  background-color: var(--body_background);
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}

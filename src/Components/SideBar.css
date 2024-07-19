@@ -1,0 +1,32 @@
+.sidebar {
+    height: 100vh;
+    flex: 1.7;
+    background-color: var(--sidebar_color);
+    color:#ffffff;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    overflow-x: auto;
+  }
+  @media only screen and (max-width: 600px) {
+    .sidebar {
+      flex: none;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 20%;
+    }
+  
+    .blocks {
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+  }

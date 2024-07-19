@@ -1,0 +1,97 @@
+.Page {
+  flex: 7;
+  overflow-y: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 15px; /* Common padding for all buttons */
+  font-size: 16px; /* Common font size for all buttons */
+  font-weight: 500; /* Common font weight for all buttons */
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  position: relative; /* Added for stacking context */
+}
+
+.FileDownloadButton {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  bottom: 20px;
+  right: 1%;
+  background-color: #007bff;
+}
+
+.FileUploadButton {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  bottom: 20px;
+  right: 5%;
+  background-color: #28a745;
+}
+
+@media only screen and (max-width: 600px) {
+  .FileUploadButton, .FileDownloadButton {
+      height: 50px;
+      width: 50px;
+      bottom: 15px;
+  }}
+
+
+  .ClearPageButton {
+    height: 55px;
+    width: 148px;
+    position: absolute;
+    bottom: 20px;
+    right: 9.5%;
+    background-color: #dc3545;
+    transition: box-shadow 0.5s linear; 
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.7);
+  }  
+
+  @media only screen and (max-width: 768px) {
+    .ClearPageButton {
+        height: 50px;
+        width: 130px;
+        right: 7%;
+        font-size: 14px;
+    }
+}
+
+.FileDownloadButton:hover,
+.FileUploadButton:hover,
+.ClearPageButton:hover {
+  box-shadow: 0 0 0 2px var(--body_background); 
+}
+
+button:hover {
+  transition: box-shadow 0.3s ease-in-out;
+  transform: translateY(-10px);
+
+}
+
+.dropped-components-container {
+  flex: 1;
+  min-height: 200px;
+  padding: 16px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.button:active {
+  cursor: grabbing;
+}
+
+.dragging {
+  cursor: move !important;
+}
