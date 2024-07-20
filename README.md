@@ -1,3 +1,8 @@
+# Overview in 77 seconds
+https://github.com/user-attachments/assets/d2b69879-21da-48bc-b97b-91ddb71fe008
+##
+Deployed on Netlify and Successfully working across devices [Netlify-App](https://fanatiaks-mini-page-builder.netlify.app/)].
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
